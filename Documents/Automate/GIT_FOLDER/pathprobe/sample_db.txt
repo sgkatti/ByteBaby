@@ -1,0 +1,117 @@
+OSPF Router with ID (10.199.1.1) (Process ID 1)
+
+                Router Link States (Area 0)
+
+Link ID         ADV Router      Age  Seq#     Checksum  Link count
+10.199.1.1      10.199.1.1      650  0x80000001  0x00F1A2  3
+  Link connected to: a Transit Network
+    (Link ID) 10.70.1.1 (Designated Router address)
+    (Link Data) 255.255.255.0
+    Number of TOS metrics: 0
+     TOS 0 Metrics: 10
+  Link connected to: a Stub Network
+    (Link ID) 10.199.1.0 (Network)
+    (Link Data) 255.255.255.0
+    TOS 0 Metrics: 10
+  Link connected to: a Transit Network
+    (Link ID) 10.70.1.2
+    (Link Data) 255.255.255.0
+    TOS 0 Metrics: 10
+
+10.70.1.2       10.70.1.2       123  0x80000002  0x004AA1  3
+  Link connected to: a Transit Network
+    (Link ID) 10.70.1.1 (Designated Router address)
+    (Link Data) 255.255.255.0
+    TOS 0 Metrics: 10
+  Link connected to: a Stub Network
+    (Link ID) 10.70.1.0
+    (Link Data) 255.255.255.0
+    TOS 0 Metrics: 10
+  Link connected to: a Transit Network
+    (Link ID) 10.199.1.1
+    (Link Data) 255.255.255.0
+    TOS 0 Metrics: 10
+
+
+                Summary Net Link States (Area 0)
+
+Link ID         ADV Router      Age  Seq#     Checksum  Metric
+172.22.1.0      10.199.1.1      123  0x80000003  0x00D123  20
+172.22.2.0      10.199.1.1      123  0x80000004  0x00D231  20
+
+
+
+OSPF Router with ID (172.22.1.1) (Process ID 1)
+
+                Router Link States (Area 1)
+
+Link ID         ADV Router      Age  Seq#     Checksum  Link count
+172.22.1.1      172.22.1.1      545  0x80000001  0x00F122  3
+  Link connected to: a Transit Network
+    (Link ID) 172.22.1.2 (Designated Router address)
+    (Link Data) 255.255.255.0
+    TOS 0 Metrics: 10
+  Link connected to: a Stub Network
+    (Link ID) 172.22.1.0
+    (Link Data) 255.255.255.0
+    TOS 0 Metrics: 10
+  Link connected to: an ABR
+    (Link ID) 10.199.1.1
+    (Link Data) 255.255.255.0
+    TOS 0 Metrics: 10
+
+172.22.1.2      172.22.1.2      120  0x80000002  0x00A1C3  2
+  Link connected to: a Transit Network
+    (Link ID) 172.22.1.1 (Designated Router address)
+    (Link Data) 255.255.255.0
+    TOS 0 Metrics: 10
+  Link connected to: a Stub Network
+    (Link ID) 172.22.1.0
+    (Link Data) 255.255.255.0
+    TOS 0 Metrics: 10
+
+
+                Summary Net Link States (Area 1)
+
+Link ID         ADV Router      Age  Seq#     Checksum  Metric
+10.70.1.0       172.22.1.1      300  0x80000005  0x00C3A1  20
+10.199.1.0      172.22.1.1      301  0x80000006  0x00C3A2  20
+
+
+
+OSPF Router with ID (172.22.2.1) (Process ID 1)
+
+                Router Link States (Area 2)
+
+Link ID         ADV Router      Age  Seq#     Checksum  Link count
+172.22.2.1      172.22.2.1      300  0x80000001  0x00B133  3
+  Link connected to: a Transit Network
+    (Link ID) 172.22.2.2 (Designated Router address)
+    (Link Data) 255.255.255.0
+    TOS 0 Metrics: 10
+  Link connected to: a Stub Network
+    (Link ID) 172.22.2.0
+    (Link Data) 255.255.255.0
+    TOS 0 Metrics: 10
+  Link connected to: an ABR
+    (Link ID) 10.70.1.2
+    (Link Data) 255.255.255.0
+    TOS 0 Metrics: 10
+
+172.22.2.2      172.22.2.2      180  0x80000002  0x00B133  2
+  Link connected to: a Transit Network
+    (Link ID) 172.22.2.1
+    (Link Data) 255.255.255.0
+    TOS 0 Metrics: 10
+  Link connected to: a Stub Network
+    (Link ID) 172.22.2.0
+    (Link Data) 255.255.255.0
+    TOS 0 Metrics: 10
+
+
+                Summary Net Link States (Area 2)
+
+Link ID         ADV Router      Age  Seq#     Checksum  Metric
+10.70.1.0       172.22.2.1      123  0x80000007  0x00A452  20
+10.199.1.0      172.22.2.1      123  0x80000008  0x00A453  20
+
