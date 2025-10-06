@@ -1,0 +1,79 @@
+{
+    "router_lsas": [
+        {
+            "router_id": "10.199.1.1",
+            "area_id": "0",
+            "links": [
+                {
+                    "link_id": "OSPF",
+                    "metric": 0
+                }
+            ]
+        },
+        {
+            "router_id": "172.22.1.1",
+            "area_id": "0",
+            "links": [
+                {
+                    "link_id": "OSPF",
+                    "metric": 0
+                }
+            ]
+        },
+        {
+            "router_id": "172.22.2.1",
+            "area_id": "0",
+            "links": [
+                {
+                    "link_id": "OSPF",
+                    "metric": 0
+                }
+            ]
+        }
+    ],
+    "network_lsas": [
+        {
+            "network_id": "172.22.1.0",
+            "attached_routers": [
+                "10.199.1.1"
+            ],
+            "area_id": "0"
+        },
+        {
+            "network_id": "172.22.2.0",
+            "attached_routers": [
+                "10.199.1.1"
+            ],
+            "area_id": "0"
+        },
+        {
+            "network_id": "10.70.1.0",
+            "attached_routers": [
+                "172.22.1.1"
+            ],
+            "area_id": "0"
+        },
+        {
+            "network_id": "10.199.1.0",
+            "attached_routers": [
+                "172.22.1.1"
+            ],
+            "area_id": "0"
+        },
+        {
+            "network_id": "10.70.1.0",
+            "attached_routers": [
+                "172.22.2.1"
+            ],
+            "area_id": "0"
+        },
+        {
+            "network_id": "10.199.1.0",
+            "attached_routers": [
+                "172.22.2.1"
+            ],
+            "area_id": "0"
+        }
+    ],
+    "summary_lsas": []
+}
