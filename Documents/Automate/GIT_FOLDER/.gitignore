@@ -1,0 +1,6 @@
+# macOS
+.DS_Store
+# Generated output from pathprobe
+Documents/Automate/GIT_FOLDER/pathprobe/output/
+# Python cache
+**/__pycache__/
